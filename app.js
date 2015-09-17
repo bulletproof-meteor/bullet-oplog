@@ -19,7 +19,7 @@ if(Meteor.isServer) {
 
 if(Meteor.isClient) {
   Meteor.subscribe('todos');
-
+  
   Template.main.events({
     'click #add-todo': function () {
       var todoText = $('#input-todo').val();
